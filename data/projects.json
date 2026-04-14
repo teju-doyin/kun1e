@@ -1,0 +1,196 @@
+[
+  {
+    "id": 1,
+    "title": "Document Management System",
+    "thumbnail": "/images/projects/lms-project/thumbnail.webp",
+    "subtitle": "Development of a Smart Document Approval Platform",
+    "category": "Project Management / Software Development",
+    "client": "Company-T (anonymised)",
+    "duration": "8 weeks",
+    "methodology": "WAgile (Flexible Agile)",
+    "role": "Project Manager / Business Analyst",
+    "overview": "Built a smart document approval platform for Company-T's project teams, ensuring a seamless user experience, enhanced scalability through analytics, and support for multiple file formats.",
+    "businessReason": "Company-T lacked a platform to track project statuses in real time and standardise its approval processes across project teams.",
+    "objectives": [
+        "Create a platform to place, manage, monitor, and track documents",
+        "Ensure seamless user experience during interface interaction",
+      "Enhance scalability through analytics",
+      "Accommodate arrays of file formats"
+    ],
+    "keyDeliverables": [
+      "AS-IS process flow",
+      "High-level requirement list",
+      "TO-BE process map",
+      "Wireframe"
+    ],
+    "stakeholderCommunication": {
+      "tools": ["MS Project"],
+      "methods": [
+        "Sprint planning, review, and retrospective meetings",
+        "Online project management platform for task tracking and document sharing",
+        "Dedicated communication channels (email groups, instant messaging)",
+        "Periodic stakeholder progress reports"
+      ]
+    },
+    "riskManagement": {
+      "approach": "Project Risk Register (PRR)",
+      "keyActivities": [
+        "Continuous risk identification and monitoring",
+        "Contingent response plans on trigger identification",
+        "Change control procedures for new risks",
+        "Regular PRR updates with documented justifications"
+    ]
+},
+    "budgetManagement": {
+      "approach": "Baseline budget from business case, updated weekly",
+      "controls": [
+        "Clear task assignments per team member",
+        "Budget transparency with task managers",
+        "Regular collaborative budget tracking"
+      ]
+    },
+    "successMetrics": [
+      "Sprint Completion Rate",
+      "User Story Completion Rate",
+      "Stakeholder Satisfaction"
+    ],
+"tags": ["Project Management", "Agile", "Business Analysis"]},
+{
+    "id": 2,
+    "title": "Pen & Playlists Website",
+     "thumbnail": "/images/projects/pen-and-playlists/thumbnail.webp",
+    "subtitle": "End-to-End Website Development for an Afrobeats Media Company",
+    "category": "Web Development / Business Analysis",
+    "client": "Pen & Playlists (anonymised)",
+    "methodology": "Iterative (MoSCoW Prioritisation)",
+    "role": "Business Analyst / Project Lead",
+    "liveUrl": "https://www.penplaylists.com",
+    "overview": "Commissioned to develop an online platform for Pen & Playlists — an Afrobeats media company — enabling direct value delivery to audiences through book releases, news stories, and event bookings.",
+    "businessReason": "Pen & Playlists needed a digital presence to serve its growing, culturally sophisticated audience and showcase its range of high-quality products and content.",
+    "gapAnalysis": "A GAP analysis was conducted to identify and bridge the gap between the current and desired digital states of the business.",
+    "requirements": {
+      "functional": [
+        "Intuitive and engaging UI with interactive elements and clear navigation",
+        "Content management for text, images, and videos",
+        "User registration, profiles, and community engagement features",
+        "Social sharing and user-generated content capabilities",
+        "E-commerce product catalog (comics, news, merchandise)"
+      ],
+      "nonFunctional": [
+        "Standard data encryption and secure payment processing",
+        "Fast loading times and responsiveness across devices",
+        "Scalability for increased traffic and future expansion"
+      ]
+    },
+    "prioritisation": {
+        "mustHave": [
+        "Website navigation",
+        "Seamless device adaptability",
+        "Newsletter/Afrobeats Insider subscription",
+        "Social media platform redirects"
+      ],
+      "shouldHave": [
+          "User registration and login",
+          "Product catalog viewing",
+          "Add to cart and checkout",
+          "Payment processing"
+        ],
+      "couldHave": [
+          "Glitch visual effect for enhanced UX"
+      ],
+      "wontHave": []
+    },
+    "keyActivities": [
+        "Workshop-based requirements gathering (virtual, Dec 31 2023)",
+      "Three virtual stand-up meetings (Jan 6, Jan 13, Jan 31 2024)",
+      "Developer hiring and negotiation based on cost-effectiveness and skill",
+      "Cross-functional swim lane process mapping",
+      "Iterative development with MoSCoW prioritisation"
+    ],
+    "tags": ["Web Dev", "Business Analysis", "MoSCoW", "E-commerce", "Afrobeats"]
+},
+  {
+    "id": 3,
+    "title": "#80NigeriansNotFraudsters",
+     "thumbnail": "/images/projects/80-nigerians/thumbnail.webp",
+    "subtitle": "Digital Campaign to Restore Nigeria's National Image",
+    "category": "Digital Marketing / Campaign Management",
+    "client": "Independent Campaign",
+    "role": "Campaign Lead",
+    "overview": "In response to an FBI report indicting 80 Nigerians for fraud, a counter-narrative digital campaign was developed to spotlight 80 young Nigerians excelling across careers and social sectors.",
+    "stateOfAffairs": "Nigeria's international image was significantly damaged following an FBI report that indicted 80 Nigerians for fraud, leading to widespread negative generalisation.",
+    "task": "Develop a digital campaign to restore Nigeria's image and shift global perception.",
+    "approach": "Conducted research to identify 80 high-achieving young Nigerians across diverse fields. Highlighted their intelligence, passion, and resourcefulness as true ambassadors of Nigeria. Disseminated the campaign across digital channels under the hashtag #80NigeriansNotFraudsters.",
+    "results": {
+        "twitterImpressions": 2276,
+      "twitterEngagements": 139,
+      "impact": "Successfully reached 2,276 individuals, shifting their perception of Nigerians and reinforcing qualities of intelligence, ambition, and resourcefulness."
+    },
+    "externalLinks": [
+        {
+        "label": "Twitter Posts & Analytics",
+        "url": "https://x.com/ibironketweets/status/1166620084938428417?s=46"
+    }
+    ],
+    "tags": ["Digital Campaign", "Social Media", "PR"]
+  },
+  {
+    "id": 4,
+    "title": "Guardian Nigeria Campaign",
+     "thumbnail": "/images/projects/guardian/thumbnail.webp",
+    "subtitle": "Digital Awareness Campaign for The Guardian Nigeria",
+    "category": "Digital Marketing / Brand Strategy",
+    "client": "The Guardian Nigeria (anonymised)",
+    "role": "Designer",
+    "overview": "Developed a digital awareness campaign for The Guardian Nigeria aimed at generating word-of-mouth and reinforcing the brand's core value proposition: reliability in journalism.",
+    "objective": "Generate word-of-mouth (WOM) for The Guardian Nigeria and strengthen brand trust.",
+    "brandProposition": "The Guardian Nigeria upholds ethical and professional journalism, going the extra mile to deliver reliable reports. Unique value proposition: RELIABILITY.",
+    "targetAudience": {
+      "gender": "Male, female, non-binary",
+      "socioeconomicClass": "Upper and middle sections",
+      "status": "Educated, left-leaning",
+      "ageRange": "25–60",
+      "location": "Nigeria"
+    },
+    "insight": "People want to stay informed but trust in news is waning due to the prevalence of gossip and fake news. There is a strong demand for a consistently trustworthy platform.",
+    "bigIdea": "Reliable News — #RE-LIE-ABLE #GUARDIAN",
+    "rationale": "As ethical journalism declines and fake news spreads, The Guardian's commitment to fact-checking and ethical practices becomes its defining differentiator. This campaign made that reliability the centrepiece of its messaging.",
+    "tags": ["Digital Marketing", "Brand Strategy", "Journalism", "Campaign Design"]
+  },
+  {
+      "id": 5,
+      "title": "Brand Awareness Campaign",
+      "thumbnail": "/images/projects/brand-awareness/thumbnail.webp",
+  "subtitle": "High-Impact Festive Season Ad Campaign",
+  "category": "Brand Marketing / Campaign Design",
+  "client": "Client X (anonymised)",
+  "role": "Design Consultant / Project Coordinator",
+  "overview": "Spearheaded the development and execution of a high-impact ad campaign for Client X, aimed at increasing brand awareness during a festive season among a nationwide target audience.",
+  "approach": "Began with extensive market research and competitor analysis to identify differentiation opportunities, followed by collaborative brainstorming to develop creative concepts aligned with Client X's brand identity. Sourced all production equipment and personnel needed to execute the vision.",
+  "production": {
+    "equipment": ["Camera", "Lighting", "Backdrops", "Props"],
+    "finalOutput": "A montage featuring bold visuals, captivating messaging, and vibrant colours, with Client X's brand elements seamlessly incorporated for consistency across all touchpoints."
+},
+  "results": {
+    "socialMediaEngagementUptick": "30%",
+    "impact": "Significant increase in brand visibility and recognition during the campaign period."
+  },
+  "credits": [
+    { "name": "Kunle", "role": "Project Management & Design" },
+    { "name": "Ayo", "role": "Copywriting & Production" },
+    { "name": "Looken", "role": "Photography" }
+  ],
+  "challengesAndSolutions": [
+    {
+      "challenge": "Ensuring the ad message across different carousel formats was clearly understood by a wide Nigerian audience.",
+      "solution": "Conducted thorough site surveys and collaborated closely with the production team to optimise placement and sizing of visual elements."
+    }
+  ],
+  "lessonsLearned": [
+    "Collaboration, creativity, and attention to detail are essential in crafting successful ad campaigns.",
+    "Data-driven decision-making adds significant value to campaign strategy.",
+    "Adaptability to current events in real-time is a key success factor."
+  ],
+  "tags": ["Branding", "Campaign Design", "Advertising"]
+}
+]
