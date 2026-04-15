@@ -5,7 +5,7 @@ import { Icons } from "./icons";
 import Image from "next/image";
 import Link from "next/link";
 import { Links } from "@/types";
-import {motion, AnimatePresence} from "framer-motion"
+import { motion, AnimatePresence } from "framer-motion";
 
 const navLinks: Links[] = [
   {
@@ -33,7 +33,7 @@ const sidebarVariants = {
   closed: {
     x: "-100%",
     transition: {
-      duration: 0.8, 
+      duration: 0.8,
       ease: [0.76, 0, 0.24, 1], // Custom "slow-in-out" cubic bezier
       staggerChildren: 0.05,
       staggerDirection: -1, // Links start disappearing from bottom to top
@@ -52,15 +52,20 @@ const sidebarVariants = {
 };
 
 const linkVariants = {
-  closed: { 
-    opacity: 0, 
-    y: 20, 
+  closed: {
+    opacity: 0,
+    y: 20,
     transition: {
-      duration: 0.4 // The links themselves fade out slightly faster than the bar moves
-    } },
-  open: { opacity: 1, y: 0, transition: {
-      duration: 0.5
-    } },
+      duration: 0.4, // The links themselves fade out slightly faster than the bar moves
+    },
+  },
+  open: {
+    opacity: 1,
+    y: 0,
+    transition: {
+      duration: 0.5,
+    },
+  },
 };
 const NavBar = () => {
   const [openSideBar, setOpenSideBar] = useState<boolean>(false);
@@ -70,9 +75,8 @@ const NavBar = () => {
   }
   function closeNav(id: number) {
     setActiveNav(id);
-    setOpenSideBar(false)
+    setOpenSideBar(false);
   }
-;
   return (
     <>
       <div className="bg-white text-black fixed w-full z-99">
@@ -84,19 +88,22 @@ const NavBar = () => {
             width={60}
             height={40}
           />
-          <Icons.menu className="cursor-pointer medium:hidden" onClick={toggleNav} />
+          <Icons.menu
+            className="cursor-pointer medium:hidden"
+            onClick={toggleNav}
+          />
           <div className="hidden medium:w-[50%] medium:flex medium:justify-between medium:items-center max-w-100">
-                {navLinks.map((link) => (
-                  <Link
-                    href={link.link}
-                    key={link.id}
-                    onClick={() => closeNav(link.id)}
-                    className={`font-esteban text-2xl medium:text-lg ${activeNav === link.id ? "text-black" : "text-gray opacity-70 medium:text-[16px]"}`}
-                  >
-                    {link.title}
-                  </Link>
-                ))}
-            </div>
+            {navLinks.map((link) => (
+              <Link
+                href={link.link}
+                key={link.id}
+                onClick={() => closeNav(link.id)}
+                className={`font-esteban text-2xl medium:text-lg ${activeNav === link.id ? "text-black" : "text-gray opacity-70 medium:text-[16px]"}`}
+              >
+                {link.title}
+              </Link>
+            ))}
+          </div>
         </div>
       </div>
       <AnimatePresence>
@@ -133,7 +140,9 @@ const NavBar = () => {
                       href={link.link}
                       onClick={() => closeNav(link.id)}
                       className={`font-esteban text-2xl ${
-                        activeNav === link.id ? "text-black" : "text-gray opacity-70 text-xl"
+                        activeNav === link.id
+                          ? "text-black"
+                          : "text-gray opacity-70 text-xl"
                       }`}
                     >
                       {link.title}
@@ -145,10 +154,13 @@ const NavBar = () => {
               <div className="flex flex-col justify-center items-center w-[90%]">
                 <div className="h-px bg-gray/20 mb-8 w-[70%]"></div>
                 <p className="mb-2 text-center text-sm px-4">
-                  We made honest design and thoughtful experiences in a human dimension
+                  We made honest design and thoughtful experiences in a human
+                  dimension
                 </p>
                 <div className="h-0.5 bg-black mb-10 w-3"></div>
-                <p className="text-sm font-semibold text-gray tracking-widest">KUN1E</p>
+                <p className="text-sm font-semibold text-gray tracking-widest">
+                  KUN1E
+                </p>
               </div>
             </motion.div>
           </>

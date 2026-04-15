@@ -1,34 +1,41 @@
 import { ReactNode, ComponentType } from "react";
 
-export  type Links = {
+export type Links = {
   id: number;
   title: string;
   link: string;
   description?: string;
-  icon?: ComponentType<{className?:string}>;
+  icon?: ComponentType<{ className?: string }>;
 };
 
 export type NumberDisplay = {
-  id:number;
+  id: number;
   number: number;
-  label:string;
-  differentStyling?:boolean
-}
-export type ExpOrEdu = {
-  id:number;
-  location: string;
-  role:string;
-  start:number;
-  end?:number
-}
-export type Skill = {
-  id:number;
   label: string;
-}
+  differentStyling?: boolean;
+};
+export type ExpOrEdu = {
+  id: number;
+  location: string;
+  role: string;
+  start: number;
+  end?: number;
+};
+
+export type Skill = {
+  id: number;
+  label: string;
+};
+export type SkillCategory = {
+  id: number;
+  category: string;
+  skillsList: Skill[];
+};
 
 export type Project = {
   id: number;
   title: string;
+  slug: string;
   thumbnail: string;
   subtitle: string;
   category: string;
@@ -74,11 +81,11 @@ export type Project = {
     wontHave: string[];
   };
   results?: {
-  twitterImpressions?: number;
-  twitterEngagements?: number;
-  socialMediaEngagementUptick?: string;
-  impact: string;
-};
+    twitterImpressions?: number;
+    twitterEngagements?: number;
+    socialMediaEngagementUptick?: string;
+    impact: string;
+  };
   targetAudience?: {
     gender: string;
     socioeconomicClass: string;
@@ -91,16 +98,16 @@ export type Project = {
     url: string;
   }[];
   production?: {
-  equipment: string[];
-  finalOutput: string;
-};
-credits?: {
-  name: string;
-  role: string;
-}[];
-challengesAndSolutions?: {
-  challenge: string;
-  solution: string;
-}[];
-lessonsLearned?: string[];
+    equipment: string[];
+    finalOutput: string;
+  };
+  credits?: {
+    name: string;
+    role: string;
+  }[];
+  challengesAndSolutions?: {
+    challenge: string;
+    solution: string;
+  }[];
+  lessonsLearned?: string[];
 };

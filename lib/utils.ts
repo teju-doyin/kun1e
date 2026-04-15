@@ -5,6 +5,6 @@ export function cn(...inputs: ClassValue[]) {
   return twMerge(clsx(inputs));
 }
 
-export const getCurrentYear = ():string=>{
-    return new Date().getFullYear().toString()
-}
+export const getCurrentYear = (): string => {
+  return new Date().getFullYear().toString();
+};

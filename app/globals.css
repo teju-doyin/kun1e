@@ -15,7 +15,7 @@
   --color-off-white: #f1f1f1;
   --color-black: #171719;
   --color-gray: #212224;
-  --breakpoint-tablet: 500px; 
+  --breakpoint-tablet: 500px;
   /* tablet is where the mobile nav will slide from the left */
   --breakpoint-medium: 600px;
   /* remove the menu icon */
@@ -41,9 +41,10 @@ body {
 }
 /* width */
 
-
 @layer base {
-  p, label,li {
+  p,
+  label,
+  li {
     font-family: var(--font-montserrat);
   }
   h1,
@@ -52,22 +53,24 @@ body {
   h4,
   h5,
   h6,
-  span, button, input {
+  span,
+  button,
+  input {
     font-family: var(--font-esteban);
-    @apply  tracking-tight;
+    @apply tracking-tight;
   }
-  button{
-    @apply cursor-pointer
+  button {
+    @apply cursor-pointer;
   }
 
-  input{
-    @apply outline-none border rounded-xs font-montserrat text-[16px] text-gray py-0.5
-  } 
-  textarea{
-    @apply resize-none outline-none font-montserrat text-[14px] text-gray border rounded-xs h-20 p-1
+  input {
+    @apply outline-none border rounded-xs font-montserrat text-[16px] text-gray py-0.5;
   }
-  .input-div{
-    @apply flex-col
+  textarea {
+    @apply resize-none outline-none font-montserrat text-[14px] text-gray border rounded-xs h-20 p-1;
+  }
+  .input-div {
+    @apply flex-col;
   }
   .flex-between {
     @apply flex justify-between;
@@ -78,11 +81,11 @@ body {
   .flex-between-center {
     @apply flex justify-between items-center;
   }
-  .flex-col{
-    @apply flex flex-col
+  .flex-col {
+    @apply flex flex-col;
   }
-  .flex-col-center{
-    @apply flex flex-col items-center
+  .flex-col-center {
+    @apply flex flex-col items-center;
   }
   .pointer {
     @apply cursor-pointer;
@@ -105,8 +108,8 @@ body {
   .line {
     @apply h-px bg-gray rounded-2xl;
   }
-  .noscroll{
-    @apply overflow-hidden
+  .noscroll {
+    @apply overflow-hidden;
   }
   .social-icon-wrapper {
     /* Use flex to center the icon perfectly */
@@ -114,13 +117,12 @@ body {
     /* Set a fixed size for the circle */
     @apply w-8 h-8 rounded-full border border-white bg-black;
   }
-  .hover-effect{
+  .hover-effect {
     @apply hover:bg-white hover:text-black transition-all duration-300;
   }
-  .base-border{
-    @apply border border-black rounded-xs
+  .base-border {
+    @apply border border-black rounded-xs;
   }
-
 
   ::-webkit-scrollbar {
     width: 8px;
@@ -133,7 +135,6 @@ body {
   ::-webkit-scrollbar-thumb {
     background: #555555;
     border-radius: 100px;
-    border: 2px solid #ffffff; 
+    border: 2px solid #ffffff;
   }
-
 }
