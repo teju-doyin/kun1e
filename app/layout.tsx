@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 import { Montserrat, Esteban, Nunito_Sans } from "next/font/google";
 import "./globals.css";
-import NavBar from "@/components/NavBar";
+import NavBar from "@/components/sharedComponents/NavBar";
 
 const montserrat = Montserrat({
   variable: "--font-montserrat",
@@ -32,9 +32,9 @@ export default function RootLayout({
   return (
     <html
       lang="en"
-      className={`${montserrat.variable} ${esteban.variable} ${nunito_sans.variable} h-full antialiased`}
+      className={`${montserrat.variable} ${esteban.variable} ${nunito_sans.variable} h-full antialiased `}
     >
-      <body className="min-h-full flex-col overflow-x-hidden">
+      <body className="min-h-full flex-col overflow-x-hidden bg-[#fff]">
         <NavBar />
         {children}
       </body>

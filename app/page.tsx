@@ -1,13 +1,13 @@
 import Image from "next/image";
-import Footer from "@/components/Footer";
-import Contact from "@/components/Contact";
-import Hero from "@/components/Hero";
+import Footer from "@/components/sharedComponents/Footer";
+import Contact from "@/components/sharedComponents/Contact";
+import Hero from "@/components/home/Hero";
 import heroImage from "@/public/images/ui/gray-bg.jpg";
-import Numbers from "@/components/Numbers";
-import Experience from "@/components/Experience";
-import Skills from "@/components/Skills";
-import Projects from "@/components/Projects";
-import FadeIn from "@/components/FadeIn";
+import Numbers from "@/components/sharedComponents/Numbers";
+import Experience from "@/components/home/Experience";
+import Skills from "@/components/sharedComponents/Skills";
+import Projects from "@/components/home/Projects";
+import FadeIn from "@/components/sharedComponents/FadeIn";
 
 export default function Home() {
   return (
@@ -32,7 +32,6 @@ export default function Home() {
       </section>
 
       {/* 3. THE "OVERLAY" CONTENT */}
-      {/* These MUST have a solid background color to cover the fixed image */}
       <div className="relative bg-white pt-12 ">
         <FadeIn>
           <Numbers />

@@ -35,7 +35,7 @@
 }
 
 body {
-  background: var(--color-off-white);
+  /* background: var(--color-off-white); */
   /* color: var(--foreground); */
   font-family: Arial, Helvetica, sans-serif;
 }

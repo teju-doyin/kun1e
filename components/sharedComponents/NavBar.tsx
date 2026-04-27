@@ -5,7 +5,7 @@ import { Icons } from "./icons";
 import Image from "next/image";
 import Link from "next/link";
 import { Links } from "@/types";
-import { motion, AnimatePresence } from "framer-motion";
+import { motion, AnimatePresence,Variants } from "framer-motion";
 
 const navLinks: Links[] = [
   {
@@ -29,7 +29,7 @@ const navLinks: Links[] = [
     link: "/contact",
   },
 ];
-const sidebarVariants = {
+const sidebarVariants: Variants = {
   closed: {
     x: "-100%",
     transition: {
