@@ -37,17 +37,16 @@ const Socials = () => (
 );
 const Footer = () => {
   return (
-    <div className="bg-black text-off-white flex-col-center pt-8 ">
+    <div className="bg-black text-off-white flex-col-center pt-8 overflow-hidden">
       <div className="flex-col-center mb-8 gap-4">
         <p className="text-sm">Or you can check out my socials</p>
         <Socials />
       </div>
-      <div className=" flex-col-center gap-2 relative -bottom-8">
+      <div className="flex-col-center gap-2">
         <p className="text-xs opacity-70">
-          {" "}
-          © {getCurrentYear()} All Rights Reserved.{" "}
+          © {getCurrentYear()} All Rights Reserved.
         </p>
-        <p className="font-nunito_sas tracking-[2rem] text-8xl opacity-10 ">
+        <p className="font-nunito_sas tracking-[2rem] text-8xl opacity-10 translate-y-[45%]">
           KUN1E
         </p>
       </div>

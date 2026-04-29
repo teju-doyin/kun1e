@@ -31,17 +31,17 @@ const skills: SkillCategory[] = [
 const Skills = () => {
   const [switchCategory, setSwitchCategory] = useState(skills[0].id);
   const [activeCategory, setActiveCategory] = useState(skills[0].skillsList);
+
   function handleSkillsSwitch(id: number) {
     setSwitchCategory(id);
     setActiveCategory(skills[id].skillsList);
   }
+
   return (
     <div className="w-[95%] mx-auto mb-12">
       <h3 className="text-2xl my-4 text-black tracking-[.2rem] font-semibold uppercase">
         Skills
       </h3>
-
-      {/* 1. Map through categories to create the headers/buttons */}
       <div className="flex gap-4 mb-6 ml-2">
         {skills.map((category) => (
           <button
@@ -53,13 +53,11 @@ const Skills = () => {
           </button>
         ))}
       </div>
-
-      {/* 2. Map through categories and then their nested skillsList */}
-      <div className="grid grid-cols-2 tablet:grid-cols-3 gap-4">
+      <div className="grid grid-cols-2 medium:grid-cols-3 md:grid-cols-4 gap-4">
         {activeCategory.map((skill) => (
           <p
-            key={`${skill.id}`}
-            className="bg-off-white border border-black/10 text-center text-sm py-1 rounded-sm"
+            key={skill.id}
+            className="bg-off-white border border-black/10 text-center text-sm py-2 rounded-sm"
           >
             {skill.label}
           </p>
